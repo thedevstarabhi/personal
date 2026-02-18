@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoveLite Economy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="logo">Move<span>Lite</span></div>
+        <nav>
+          <a href="#economy">Economy</a>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#cta">Get App</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="economy" class="hero">
+        <div class="hero-bg-orb hero-bg-orb-left"></div>
+        <div class="hero-bg-orb hero-bg-orb-right"></div>
+
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="hero-pill">⚡ Built with &lt;3 on Solana</p>
+            <h1>
+              Get your AI<br />
+              Agent for
+              <span class="price-chip">0.4 SOL</span>
+              in a
+              <span class="hero-accent">.molt</span>
+              domain
+            </h1>
+            <p class="subtitle">
+              Mint a <strong>.molt domain</strong>. Get an AI agent. No cloud
+              server bills. No DevOps setup. Ready for production launch in
+              minutes.
+            </p>
+            <div class="actions">
+              <a class="btn btn-primary" href="#cta">✦ Mint Your Agent</a>
+              <a class="btn btn-ghost" href="#features">Documentation</a>
+              <a class="btn btn-dark" href="#pricing">Trade on Tensor</a>
+            </div>
+
+            <div class="hero-meta">
+              <span>● Live on Mainnet</span>
+              <span>● Powered by Solana</span>
+              <span>● No Private Keys</span>
+            </div>
+          </div>
+
+          <div class="showcase-wrap">
+            <article class="showcase-card">
+              <div class="showcase-header">
+                <span>MOLT DOMAIN</span>
+                <span class="solana-mark">◉</span>
+              </div>
+              <div class="showcase-art">🧠</div>
+              <h3>agent007.molt</h3>
+              <p>SOLANA DOMAIN NAME</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="container partners">
+          <p>POWERED BY THE BEST IN WEB3</p>
+          <div class="partner-list">
+            <span>Metaplex</span>
+            <span>Cloudflare</span>
+            <span>Helius</span>
+            <span>Phantom</span>
+            <span>Jupiter</span>
+            <span>Solana</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features container">
+        <article>
+          <h3>Transparent pricing</h3>
+          <p>No hidden fees with upfront fare estimates before you book.</p>
+        </article>
+        <article>
+          <h3>Reliable drivers</h3>
+          <p>Rated, verified drivers with real-time route tracking.</p>
+        </article>
+        <article>
+          <h3>Quick pickup</h3>
+          <p>Smart matching gets you a nearby driver in minutes.</p>
+        </article>
+      </section>
+
+      <section id="pricing" class="pricing">
+        <div class="container">
+          <h2>Simple economy plan</h2>
+          <p>Perfect for daily commute, city trips, and quick errands.</p>
+          <div class="price-card">
+            <div>
+              <h4>Economy Base</h4>
+              <p>Starts from</p>
+            </div>
+            <strong>$1.50</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="cta container">
+        <h2>Ready to launch your own mobility landing page?</h2>
+        <p>
+          This starter gives you a strong structure you can customize with your
+          brand, content, and booking flow.
+        </p>
+        <a class="btn btn-primary" href="#">Download app mockup</a>
+      </section>
+    </main>
+
+    <script>
+      const glossyButtons = document.querySelectorAll(".btn");
+
+      glossyButtons.forEach((button) => {
+        button.addEventListener("mousemove", (event) => {
+          const rect = button.getBoundingClientRect();
+          const x = event.clientX - rect.left;
+          const y = event.clientY - rect.top;
+
+          button.style.setProperty("--mx", `${x}px`);
+          button.style.setProperty("--my", `${y}px`);
+        });
+
+        button.addEventListener("mouseleave", () => {
+          button.style.removeProperty("--mx");
+          button.style.removeProperty("--my");
+        });
+      });
+    </script>
+  </body>
+</html>
